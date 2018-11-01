@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FlocksListingsCityDetailsView" customModule="BirdsFlock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CitiesButton" translatesAutoresizingMaskIntoConstraints="NO" id="DW5-i0-jqy">
+                    <rect key="frame" x="16" y="62" width="343" height="140"/>
+                    <color key="backgroundColor" red="0.0" green="0.56284224989999998" blue="0.31881666180000001" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="343" id="Imp-kc-9vd"/>
+                        <constraint firstAttribute="height" constant="140" id="jfY-gp-MVi"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="scrollableAxes" translatesAutoresizingMaskIntoConstraints="NO" id="w06-HS-vmD">
+                    <rect key="frame" x="13" y="210" width="346" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NAME:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fCu-qt-JeD">
+                            <rect key="frame" x="9" y="8" width="62" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Yda-g3-RMe" userLabel="Text Name">
+                            <rect key="frame" x="117" y="5" width="221" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY NAME" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFc-D2-Sbe" userLabel="CITY NAME">
+                            <rect key="frame" x="34" y="40" width="109" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CAPACITY:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Wc-Od-zuu">
+                            <rect key="frame" x="9" y="75" width="100" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fVo-Uy-jkW" userLabel="Text Cap">
+                            <rect key="frame" x="117" y="69" width="221" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY CAPACITY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e8L-Np-qaZ">
+                            <rect key="frame" x="34" y="107" width="151" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAT:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kuf-rf-WDp">
+                            <rect key="frame" x="9" y="142" width="38" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HdZ-j6-mev" userLabel="Text Lat">
+                            <rect key="frame" x="117" y="139" width="221" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY LATITUDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YOI-0J-eAG" userLabel="CITY LAT">
+                            <rect key="frame" x="34" y="174" width="146" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LON:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tbe-vB-zWx">
+                            <rect key="frame" x="9" y="205" width="46" height="24"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oHE-M8-ecU" userLabel="Text Lon">
+                            <rect key="frame" x="117" y="202" width="221" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CITY LONGITUDE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZFx-kd-n5L" userLabel="CITY LON">
+                            <rect key="frame" x="34" y="237" width="165" height="24"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kQ-Oz-pZd">
+                            <rect key="frame" x="8" y="272" width="330" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <state key="normal" title="Save"/>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="Kuf-rf-WDp" firstAttribute="centerY" secondItem="HdZ-j6-mev" secondAttribute="centerY" id="1bu-1c-r73"/>
+                        <constraint firstItem="fVo-Uy-jkW" firstAttribute="trailing" secondItem="HdZ-j6-mev" secondAttribute="trailing" id="3Mn-9p-d7H"/>
+                        <constraint firstAttribute="bottom" secondItem="0kQ-Oz-pZd" secondAttribute="bottom" constant="18" id="4Cd-CW-ZTL"/>
+                        <constraint firstItem="fCu-qt-JeD" firstAttribute="leading" secondItem="w06-HS-vmD" secondAttribute="leading" constant="9" id="6QR-KT-unH"/>
+                        <constraint firstItem="Kuf-rf-WDp" firstAttribute="leading" secondItem="tbe-vB-zWx" secondAttribute="leading" id="6ZN-9O-q9L"/>
+                        <constraint firstItem="Yda-g3-RMe" firstAttribute="trailing" secondItem="w06-HS-vmD" secondAttribute="trailingMargin" id="Cu5-Bw-Lxs"/>
+                        <constraint firstItem="fCu-qt-JeD" firstAttribute="centerY" secondItem="Yda-g3-RMe" secondAttribute="centerY" id="Ef9-mS-K1b"/>
+                        <constraint firstItem="HdZ-j6-mev" firstAttribute="trailing" secondItem="oHE-M8-ecU" secondAttribute="trailing" id="HrY-1g-btq"/>
+                        <constraint firstItem="Yda-g3-RMe" firstAttribute="leading" secondItem="fVo-Uy-jkW" secondAttribute="leading" id="LQ8-2C-JMQ"/>
+                        <constraint firstItem="e8L-Np-qaZ" firstAttribute="top" secondItem="fVo-Uy-jkW" secondAttribute="bottom" constant="8" symbolic="YES" id="M20-IS-gB4"/>
+                        <constraint firstItem="ZFx-kd-n5L" firstAttribute="top" secondItem="tbe-vB-zWx" secondAttribute="bottom" constant="8" symbolic="YES" id="MCj-0m-Jvh"/>
+                        <constraint firstItem="fCu-qt-JeD" firstAttribute="leading" secondItem="4Wc-Od-zuu" secondAttribute="leading" id="NJf-Fa-HMd"/>
+                        <constraint firstItem="YOI-0J-eAG" firstAttribute="top" secondItem="Kuf-rf-WDp" secondAttribute="bottom" constant="8" symbolic="YES" id="Nat-d4-Eb1"/>
+                        <constraint firstItem="FFc-D2-Sbe" firstAttribute="leading" secondItem="w06-HS-vmD" secondAttribute="leading" constant="34" id="OSo-nI-qtD"/>
+                        <constraint firstItem="fVo-Uy-jkW" firstAttribute="leading" secondItem="4Wc-Od-zuu" secondAttribute="trailing" constant="8" symbolic="YES" id="OqB-ye-6Bc"/>
+                        <constraint firstItem="HdZ-j6-mev" firstAttribute="leading" secondItem="oHE-M8-ecU" secondAttribute="leading" id="P8g-F4-G0X"/>
+                        <constraint firstItem="FFc-D2-Sbe" firstAttribute="leading" secondItem="e8L-Np-qaZ" secondAttribute="leading" id="P9j-j3-0jU"/>
+                        <constraint firstItem="0kQ-Oz-pZd" firstAttribute="top" secondItem="ZFx-kd-n5L" secondAttribute="bottom" constant="11" id="QBi-SD-nwG"/>
+                        <constraint firstItem="Yda-g3-RMe" firstAttribute="trailing" secondItem="fVo-Uy-jkW" secondAttribute="trailing" id="Qe0-mX-LtS"/>
+                        <constraint firstItem="4Wc-Od-zuu" firstAttribute="leading" secondItem="Kuf-rf-WDp" secondAttribute="leading" id="Uut-Rc-gFE"/>
+                        <constraint firstItem="fCu-qt-JeD" firstAttribute="top" secondItem="w06-HS-vmD" secondAttribute="topMargin" id="VUe-o4-Fyj"/>
+                        <constraint firstItem="HdZ-j6-mev" firstAttribute="top" secondItem="e8L-Np-qaZ" secondAttribute="bottom" constant="8" symbolic="YES" id="Zow-at-z6U"/>
+                        <constraint firstItem="e8L-Np-qaZ" firstAttribute="leading" secondItem="YOI-0J-eAG" secondAttribute="leading" id="bwg-vl-qUa"/>
+                        <constraint firstItem="tbe-vB-zWx" firstAttribute="centerY" secondItem="oHE-M8-ecU" secondAttribute="centerY" id="du9-Oj-asu"/>
+                        <constraint firstItem="oHE-M8-ecU" firstAttribute="top" secondItem="YOI-0J-eAG" secondAttribute="bottom" constant="4" id="goh-j5-YVo"/>
+                        <constraint firstItem="oHE-M8-ecU" firstAttribute="trailing" secondItem="0kQ-Oz-pZd" secondAttribute="trailing" id="i96-jL-A0Q"/>
+                        <constraint firstItem="fVo-Uy-jkW" firstAttribute="leading" secondItem="HdZ-j6-mev" secondAttribute="leading" id="ice-Rm-9QD"/>
+                        <constraint firstItem="e8L-Np-qaZ" firstAttribute="top" secondItem="4Wc-Od-zuu" secondAttribute="bottom" constant="8" symbolic="YES" id="nGh-yZ-xtr"/>
+                        <constraint firstItem="FFc-D2-Sbe" firstAttribute="top" secondItem="fCu-qt-JeD" secondAttribute="bottom" constant="8" symbolic="YES" id="oJH-ro-Kh3"/>
+                        <constraint firstAttribute="height" constant="320" id="oX8-5m-bgh"/>
+                        <constraint firstItem="fVo-Uy-jkW" firstAttribute="top" secondItem="FFc-D2-Sbe" secondAttribute="bottom" constant="5" id="qga-cT-z27"/>
+                        <constraint firstItem="YOI-0J-eAG" firstAttribute="leading" secondItem="ZFx-kd-n5L" secondAttribute="leading" id="sKR-w3-BQ7"/>
+                        <constraint firstAttribute="width" constant="346" id="xBQ-TE-IXy"/>
+                        <constraint firstItem="0kQ-Oz-pZd" firstAttribute="leading" secondItem="w06-HS-vmD" secondAttribute="leadingMargin" id="yaq-MC-MDa"/>
+                        <constraint firstItem="0kQ-Oz-pZd" firstAttribute="centerX" secondItem="w06-HS-vmD" secondAttribute="centerX" id="zll-8H-WAz"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="DW5-i0-jqy" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="42" id="9FB-iC-dlA"/>
+                <constraint firstItem="w06-HS-vmD" firstAttribute="top" secondItem="DW5-i0-jqy" secondAttribute="bottom" constant="8" id="EtA-Rk-glF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="DW5-i0-jqy" secondAttribute="trailing" constant="16" id="IyF-GN-8i5"/>
+                <constraint firstItem="w06-HS-vmD" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="13" id="PTV-ts-LhX"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="w06-HS-vmD" secondAttribute="trailing" constant="16" id="k49-sj-Edd"/>
+                <constraint firstItem="DW5-i0-jqy" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="opW-7g-xVW"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="cityCapacityLabel" destination="e8L-Np-qaZ" id="1yl-mN-X3h"/>
+                <outlet property="cityCapacityTextInput" destination="fVo-Uy-jkW" id="tRW-gC-isV"/>
+                <outlet property="cityLatLabel" destination="YOI-0J-eAG" id="xvg-NU-PhB"/>
+                <outlet property="cityLatTextInput" destination="HdZ-j6-mev" id="rPe-kF-Ajo"/>
+                <outlet property="cityLonLabel" destination="ZFx-kd-n5L" id="Ir3-NA-qZs"/>
+                <outlet property="cityLonTextInput" destination="oHE-M8-ecU" id="bze-DM-hjM"/>
+                <outlet property="cityNameLabel" destination="FFc-D2-Sbe" id="2Uo-1u-f6S"/>
+                <outlet property="cityNameTextInput" destination="Yda-g3-RMe" id="KkA-yi-a2R"/>
+                <outlet property="cityScrollView" destination="w06-HS-vmD" id="2xI-uD-KOB"/>
+                <outlet property="saveButton" destination="0kQ-Oz-pZd" id="fa3-My-2fp"/>
+            </connections>
+            <point key="canvasLocation" x="-402" y="-31"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="CitiesButton" width="37.5" height="37.5"/>
+    </resources>
+</document>

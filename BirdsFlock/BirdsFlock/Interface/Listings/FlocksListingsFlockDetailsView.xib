@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FlocksListingsFlockDetailsView" customModule="BirdsFlock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FlockButton" translatesAutoresizingMaskIntoConstraints="NO" id="KiD-yZ-mkL">
+                    <rect key="frame" x="16" y="62" width="343" height="140"/>
+                    <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="X0I-Nv-OCh"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ybs-rx-HFE">
+                    <rect key="frame" x="16" y="210" width="343" height="320"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flock ID:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8In-Ia-rc8">
+                            <rect key="frame" x="8" y="29" width="67" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Number of Birds:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eoO-AR-gUR">
+                            <rect key="frame" x="8" y="95" width="130" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHm-nU-9Kz">
+                            <rect key="frame" x="33" y="58" width="105" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birds Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oxL-Lg-Lxh">
+                            <rect key="frame" x="33" y="133" width="105" height="21"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="C12-Dt-7Si">
+                            <rect key="frame" x="150" y="26" width="185" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ikp-da-bnQ">
+                            <rect key="frame" x="150" y="92" width="185" height="30"/>
+                            <nil key="textColor"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGK-rq-4Wy">
+                            <rect key="frame" x="8" y="224" width="327" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <state key="normal" title="Save">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="eoO-AR-gUR" firstAttribute="top" secondItem="cHm-nU-9Kz" secondAttribute="bottom" constant="16" id="2cB-bj-vMi"/>
+                        <constraint firstItem="8In-Ia-rc8" firstAttribute="baseline" secondItem="C12-Dt-7Si" secondAttribute="baseline" id="92l-aR-xa8"/>
+                        <constraint firstItem="ikp-da-bnQ" firstAttribute="leading" secondItem="eoO-AR-gUR" secondAttribute="trailing" constant="12" id="B8z-Na-KQx"/>
+                        <constraint firstItem="C12-Dt-7Si" firstAttribute="leading" secondItem="ikp-da-bnQ" secondAttribute="leading" id="CiX-fj-qdi"/>
+                        <constraint firstItem="PGK-rq-4Wy" firstAttribute="centerX" secondItem="Ybs-rx-HFE" secondAttribute="centerX" id="Gtp-S6-3ql"/>
+                        <constraint firstItem="cHm-nU-9Kz" firstAttribute="leading" secondItem="oxL-Lg-Lxh" secondAttribute="leading" id="L4f-Xz-ZPm"/>
+                        <constraint firstItem="C12-Dt-7Si" firstAttribute="top" secondItem="Ybs-rx-HFE" secondAttribute="top" constant="26" id="PeJ-fH-soG"/>
+                        <constraint firstItem="eoO-AR-gUR" firstAttribute="trailing" secondItem="oxL-Lg-Lxh" secondAttribute="trailing" id="R5y-Yz-QQ9"/>
+                        <constraint firstItem="PGK-rq-4Wy" firstAttribute="top" secondItem="oxL-Lg-Lxh" secondAttribute="bottom" constant="70" id="Ysa-e1-Ccm"/>
+                        <constraint firstItem="ikp-da-bnQ" firstAttribute="trailing" secondItem="PGK-rq-4Wy" secondAttribute="trailing" id="aFL-3d-rd0"/>
+                        <constraint firstItem="oxL-Lg-Lxh" firstAttribute="top" secondItem="eoO-AR-gUR" secondAttribute="bottom" constant="17" id="bPw-mC-Khp"/>
+                        <constraint firstItem="eoO-AR-gUR" firstAttribute="leading" secondItem="PGK-rq-4Wy" secondAttribute="leading" id="imY-nN-XpL"/>
+                        <constraint firstItem="cHm-nU-9Kz" firstAttribute="trailing" secondItem="eoO-AR-gUR" secondAttribute="trailing" id="k1U-ou-ajo"/>
+                        <constraint firstItem="C12-Dt-7Si" firstAttribute="trailing" secondItem="ikp-da-bnQ" secondAttribute="trailing" id="njE-yb-NDL"/>
+                        <constraint firstItem="C12-Dt-7Si" firstAttribute="trailing" secondItem="Ybs-rx-HFE" secondAttribute="trailingMargin" id="oWj-m5-A4q"/>
+                        <constraint firstItem="cHm-nU-9Kz" firstAttribute="leading" secondItem="Ybs-rx-HFE" secondAttribute="leading" constant="33" id="pXn-Rh-zqq"/>
+                        <constraint firstItem="8In-Ia-rc8" firstAttribute="leading" secondItem="eoO-AR-gUR" secondAttribute="leading" id="t3v-Cr-0Z8"/>
+                        <constraint firstItem="cHm-nU-9Kz" firstAttribute="top" secondItem="8In-Ia-rc8" secondAttribute="bottom" constant="8" symbolic="YES" id="uGK-bh-acH"/>
+                        <constraint firstItem="8In-Ia-rc8" firstAttribute="leading" secondItem="Ybs-rx-HFE" secondAttribute="leadingMargin" id="vWM-wb-KO6"/>
+                        <constraint firstAttribute="bottom" secondItem="PGK-rq-4Wy" secondAttribute="bottom" constant="66" id="wbq-DS-deC"/>
+                        <constraint firstItem="eoO-AR-gUR" firstAttribute="baseline" secondItem="ikp-da-bnQ" secondAttribute="baseline" id="xcE-ip-CGZ"/>
+                        <constraint firstAttribute="height" constant="320" id="zLJ-ZX-ijL"/>
+                    </constraints>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="KiD-yZ-mkL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="HVZ-CZ-LC5"/>
+                <constraint firstItem="KiD-yZ-mkL" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="42" id="dms-pe-25m"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KiD-yZ-mkL" secondAttribute="trailing" constant="16" id="g8z-WA-JEK"/>
+                <constraint firstItem="Ybs-rx-HFE" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="gQQ-q6-ZQB"/>
+                <constraint firstItem="Ybs-rx-HFE" firstAttribute="width" secondItem="KiD-yZ-mkL" secondAttribute="width" id="rHE-zQ-UdX"/>
+                <constraint firstItem="Ybs-rx-HFE" firstAttribute="top" secondItem="KiD-yZ-mkL" secondAttribute="bottom" constant="8" id="wsQ-kQ-haQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Ybs-rx-HFE" secondAttribute="trailing" constant="16" id="zny-8Q-E9I"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="flockCountLabel" destination="oxL-Lg-Lxh" id="5m9-Vz-fBz"/>
+                <outlet property="flockCountTextInput" destination="ikp-da-bnQ" id="XaY-xm-Yhg"/>
+                <outlet property="flockIdLabel" destination="cHm-nU-9Kz" id="MjR-k0-Qtr"/>
+                <outlet property="flockIdTextInput" destination="C12-Dt-7Si" id="Sbf-bH-LKt"/>
+                <outlet property="flockSaveButton" destination="PGK-rq-4Wy" id="yxi-52-dKu"/>
+                <outlet property="flockScrollView" destination="Ybs-rx-HFE" id="nXo-R9-8Xc"/>
+            </connections>
+            <point key="canvasLocation" x="121" y="134"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="FlockButton" width="48" height="28.5"/>
+    </resources>
+</document>

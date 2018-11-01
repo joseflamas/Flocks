@@ -1,0 +1,597 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BB2988CA2186996D00B889BB /* FlocksListingsScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2988C92186996C00B889BB /* FlocksListingsScheduleTableViewCell.xib */; };
+		BB2988CC218699C400B889BB /* FlocksListingsScheduleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB2988CB218699C400B889BB /* FlocksListingsScheduleTableViewCell.swift */; };
+		BB2CECAA218A6BD1009F0C71 /* FlocksListingsNoScheduleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB2CECA9218A6BD1009F0C71 /* FlocksListingsNoScheduleTableViewCell.xib */; };
+		BB50A189217D2E6B0045502C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A188217D2E6B0045502C /* AppDelegate.swift */; };
+		BB50A190217D2E780045502C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB50A18F217D2E780045502C /* Assets.xcassets */; };
+		BB50A193217D2E780045502C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BB50A191217D2E780045502C /* LaunchScreen.storyboard */; };
+		BB50A1A1217D46CE0045502C /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1A0217D46CE0045502C /* City.swift */; };
+		BB50A1A4217D46FC0045502C /* Flock.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1A3217D46FC0045502C /* Flock.swift */; };
+		BB50A1A6217D473B0045502C /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1A5217D473B0045502C /* Schedule.swift */; };
+		BB50A1A8217D59DF0045502C /* AppManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1A7217D59DF0045502C /* AppManager.swift */; };
+		BB50A1AB217D64850045502C /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1AA217D64850045502C /* Common.swift */; };
+		BB50A1AD217D6B3B0045502C /* ViewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1AC217D6B3B0045502C /* ViewsCoordinator.swift */; };
+		BB50A1AF217D6BC00045502C /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1AE217D6BC00045502C /* DataManager.swift */; };
+		BB50A1B3217D6CE60045502C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1B2217D6CE60045502C /* Strings.swift */; };
+		BB50A1B8217D6DE10045502C /* FlocksExplorerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1B7217D6DE10045502C /* FlocksExplorerViewController.swift */; };
+		BB50A1BA217D713F0045502C /* FlocksExplorerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB50A1B9217D713F0045502C /* FlocksExplorerViewController.xib */; };
+		BB50A1BC217D794A0045502C /* FlocksExplorerMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB50A1BB217D794A0045502C /* FlocksExplorerMapView.swift */; };
+		BB50A1C1217D7C890045502C /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB50A1C0217D7C890045502C /* MapKit.framework */; };
+		BB65A0F2218156120090988C /* FlocksListingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A0F1218156120090988C /* FlocksListingsTableViewController.swift */; };
+		BB65A0F9218184390090988C /* FlocksListingsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB65A0F8218184390090988C /* FlocksListingsTableViewController.xib */; };
+		BB65A0FD218185F80090988C /* FlocksListingsCityDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A0FC218185F80090988C /* FlocksListingsCityDetailsView.swift */; };
+		BB65A103218247D70090988C /* FlocksListingsCityDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB65A102218247D70090988C /* FlocksListingsCityDetailsView.xib */; };
+		BB65A105218248C90090988C /* FlocksListingsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB65A104218248C90090988C /* FlocksListingsDetailViewController.swift */; };
+		BB65A107218249230090988C /* FlocksListingsDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB65A106218249230090988C /* FlocksListingsDetailViewController.xib */; };
+		BB899412217EC44100473B7A /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB899411217EC44100473B7A /* Extensions.swift */; };
+		BB899414217ED9EC00473B7A /* FlocksExplorerMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB899413217ED9EC00473B7A /* FlocksExplorerMapAnnotation.swift */; };
+		BB899418217EE06700473B7A /* FlocksExplorerMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB899417217EE06700473B7A /* FlocksExplorerMapAnnotationView.swift */; };
+		BB89941A217EFB9F00473B7A /* FlocksExplorerMapCityAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB899419217EFB9F00473B7A /* FlocksExplorerMapCityAnnotationView.xib */; };
+		BB89941C217F011600473B7A /* FlocksExplorerMapCityAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB89941B217F011600473B7A /* FlocksExplorerMapCityAnnotationView.swift */; };
+		BB89941E217FF8E500473B7A /* FlocksExplorerMapFlockAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB89941D217FF8E500473B7A /* FlocksExplorerMapFlockAnnotationView.xib */; };
+		BB8994202180009000473B7A /* FlocksExplorerMapFlockAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB89941F2180009000473B7A /* FlocksExplorerMapFlockAnnotationView.swift */; };
+		BB8994222180117B00473B7A /* FlocksExplorerMapScheduleAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB8994212180117B00473B7A /* FlocksExplorerMapScheduleAnnotationView.swift */; };
+		BB8994242180124A00473B7A /* FlocksExplorerMapScheduleAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB8994232180124A00473B7A /* FlocksExplorerMapScheduleAnnotationView.xib */; };
+		BBC1466B21878D4C004C2B25 /* FlocksListingsFlockDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1466A21878D4C004C2B25 /* FlocksListingsFlockDetailsView.swift */; };
+		BBC1466D21878D83004C2B25 /* FlocksListingsFlockDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC1466C21878D83004C2B25 /* FlocksListingsFlockDetailsView.xib */; };
+		BBC1466F21878DAB004C2B25 /* FlocksListingsScheduleDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC1466E21878DAB004C2B25 /* FlocksListingsScheduleDetailsView.swift */; };
+		BBC1467121878DC6004C2B25 /* FlocksListingsScheduleDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBC1467021878DC6004C2B25 /* FlocksListingsScheduleDetailsView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		BB2988C92186996C00B889BB /* FlocksListingsScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		BB2988CB218699C400B889BB /* FlocksListingsScheduleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsScheduleTableViewCell.swift; sourceTree = "<group>"; };
+		BB2CECA9218A6BD1009F0C71 /* FlocksListingsNoScheduleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsNoScheduleTableViewCell.xib; sourceTree = "<group>"; };
+		BB50A185217D2E6A0045502C /* BirdsFlock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BirdsFlock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB50A188217D2E6B0045502C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BB50A18F217D2E780045502C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BB50A192217D2E780045502C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BB50A194217D2E780045502C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BB50A1A0217D46CE0045502C /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		BB50A1A3217D46FC0045502C /* Flock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flock.swift; sourceTree = "<group>"; };
+		BB50A1A5217D473B0045502C /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		BB50A1A7217D59DF0045502C /* AppManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppManager.swift; sourceTree = "<group>"; };
+		BB50A1AA217D64850045502C /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		BB50A1AC217D6B3B0045502C /* ViewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsCoordinator.swift; sourceTree = "<group>"; };
+		BB50A1AE217D6BC00045502C /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		BB50A1B2217D6CE60045502C /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		BB50A1B7217D6DE10045502C /* FlocksExplorerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerViewController.swift; sourceTree = "<group>"; };
+		BB50A1B9217D713F0045502C /* FlocksExplorerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksExplorerViewController.xib; sourceTree = "<group>"; };
+		BB50A1BB217D794A0045502C /* FlocksExplorerMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapView.swift; sourceTree = "<group>"; };
+		BB50A1C0217D7C890045502C /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		BB65A0F1218156120090988C /* FlocksListingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsTableViewController.swift; sourceTree = "<group>"; };
+		BB65A0F8218184390090988C /* FlocksListingsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsTableViewController.xib; sourceTree = "<group>"; };
+		BB65A0FC218185F80090988C /* FlocksListingsCityDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsCityDetailsView.swift; sourceTree = "<group>"; };
+		BB65A102218247D70090988C /* FlocksListingsCityDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsCityDetailsView.xib; sourceTree = "<group>"; };
+		BB65A104218248C90090988C /* FlocksListingsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsDetailViewController.swift; sourceTree = "<group>"; };
+		BB65A106218249230090988C /* FlocksListingsDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsDetailViewController.xib; sourceTree = "<group>"; };
+		BB899411217EC44100473B7A /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		BB899413217ED9EC00473B7A /* FlocksExplorerMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapAnnotation.swift; sourceTree = "<group>"; };
+		BB899417217EE06700473B7A /* FlocksExplorerMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapAnnotationView.swift; sourceTree = "<group>"; };
+		BB899419217EFB9F00473B7A /* FlocksExplorerMapCityAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksExplorerMapCityAnnotationView.xib; sourceTree = "<group>"; };
+		BB89941B217F011600473B7A /* FlocksExplorerMapCityAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapCityAnnotationView.swift; sourceTree = "<group>"; };
+		BB89941D217FF8E500473B7A /* FlocksExplorerMapFlockAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksExplorerMapFlockAnnotationView.xib; sourceTree = "<group>"; };
+		BB89941F2180009000473B7A /* FlocksExplorerMapFlockAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapFlockAnnotationView.swift; sourceTree = "<group>"; };
+		BB8994212180117B00473B7A /* FlocksExplorerMapScheduleAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksExplorerMapScheduleAnnotationView.swift; sourceTree = "<group>"; };
+		BB8994232180124A00473B7A /* FlocksExplorerMapScheduleAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksExplorerMapScheduleAnnotationView.xib; sourceTree = "<group>"; };
+		BBC1466A21878D4C004C2B25 /* FlocksListingsFlockDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsFlockDetailsView.swift; sourceTree = "<group>"; };
+		BBC1466C21878D83004C2B25 /* FlocksListingsFlockDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsFlockDetailsView.xib; sourceTree = "<group>"; };
+		BBC1466E21878DAB004C2B25 /* FlocksListingsScheduleDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlocksListingsScheduleDetailsView.swift; sourceTree = "<group>"; };
+		BBC1467021878DC6004C2B25 /* FlocksListingsScheduleDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FlocksListingsScheduleDetailsView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BB50A182217D2E6A0045502C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB50A1C1217D7C890045502C /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BB2CECAB218A6C62009F0C71 /* ExplorerMap */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1B7217D6DE10045502C /* FlocksExplorerViewController.swift */,
+			);
+			path = ExplorerMap;
+			sourceTree = "<group>";
+		};
+		BB2CECAC218A6C70009F0C71 /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				BB65A0F1218156120090988C /* FlocksListingsTableViewController.swift */,
+				BB65A104218248C90090988C /* FlocksListingsDetailViewController.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		BB50A17C217D2E6A0045502C = {
+			isa = PBXGroup;
+			children = (
+				BB50A188217D2E6B0045502C /* AppDelegate.swift */,
+				BB50A187217D2E6A0045502C /* BirdsFlock */,
+				BB50A186217D2E6A0045502C /* Products */,
+				BB50A1BF217D7C890045502C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BB50A186217D2E6A0045502C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A185217D2E6A0045502C /* BirdsFlock.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BB50A187217D2E6A0045502C /* BirdsFlock */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A19A217D44350045502C /* Source */,
+				BB50A19F217D45220045502C /* Interface */,
+				BB50A19E217D450F0045502C /* Resources */,
+				BB50A19B217D443A0045502C /* Support Files */,
+			);
+			path = BirdsFlock;
+			sourceTree = "<group>";
+		};
+		BB50A19A217D44350045502C /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1A9217D645E0045502C /* Shared */,
+				BB50A19C217D44560045502C /* Models */,
+				BB50A1B6217D6DBC0045502C /* Controllers */,
+				BB50A19D217D449B0045502C /* Views */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		BB50A19B217D443A0045502C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A194217D2E780045502C /* Info.plist */,
+			);
+			path = "Support Files";
+			sourceTree = "<group>";
+		};
+		BB50A19C217D44560045502C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1A0217D46CE0045502C /* City.swift */,
+				BB50A1A3217D46FC0045502C /* Flock.swift */,
+				BB50A1A5217D473B0045502C /* Schedule.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BB50A19D217D449B0045502C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BB65A0ED218154EF0090988C /* ExplorerMap */,
+				BB65A0F62181635B0090988C /* Listings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BB50A19E217D450F0045502C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A18F217D2E780045502C /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BB50A19F217D45220045502C /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A191217D2E780045502C /* LaunchScreen.storyboard */,
+				BB65A0EE218155030090988C /* ExplorerMap */,
+				BB65A0F52181634E0090988C /* Listings */,
+			);
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		BB50A1A9217D645E0045502C /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1AA217D64850045502C /* Common.swift */,
+				BB50A1B2217D6CE60045502C /* Strings.swift */,
+				BB89940F217EC18200473B7A /* Managers */,
+				BB899410217EC41600473B7A /* Extensions */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		BB50A1B6217D6DBC0045502C /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BB2CECAB218A6C62009F0C71 /* ExplorerMap */,
+				BB2CECAC218A6C70009F0C71 /* Listings */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BB50A1BF217D7C890045502C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1C0217D7C890045502C /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB65A0ED218154EF0090988C /* ExplorerMap */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1BB217D794A0045502C /* FlocksExplorerMapView.swift */,
+				BB899413217ED9EC00473B7A /* FlocksExplorerMapAnnotation.swift */,
+				BB899417217EE06700473B7A /* FlocksExplorerMapAnnotationView.swift */,
+				BB89941B217F011600473B7A /* FlocksExplorerMapCityAnnotationView.swift */,
+				BB89941F2180009000473B7A /* FlocksExplorerMapFlockAnnotationView.swift */,
+				BB8994212180117B00473B7A /* FlocksExplorerMapScheduleAnnotationView.swift */,
+			);
+			path = ExplorerMap;
+			sourceTree = "<group>";
+		};
+		BB65A0EE218155030090988C /* ExplorerMap */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1B9217D713F0045502C /* FlocksExplorerViewController.xib */,
+				BB899419217EFB9F00473B7A /* FlocksExplorerMapCityAnnotationView.xib */,
+				BB89941D217FF8E500473B7A /* FlocksExplorerMapFlockAnnotationView.xib */,
+				BB8994232180124A00473B7A /* FlocksExplorerMapScheduleAnnotationView.xib */,
+			);
+			path = ExplorerMap;
+			sourceTree = "<group>";
+		};
+		BB65A0F52181634E0090988C /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				BB65A0F8218184390090988C /* FlocksListingsTableViewController.xib */,
+				BB2988C92186996C00B889BB /* FlocksListingsScheduleTableViewCell.xib */,
+				BB2CECA9218A6BD1009F0C71 /* FlocksListingsNoScheduleTableViewCell.xib */,
+				BB65A106218249230090988C /* FlocksListingsDetailViewController.xib */,
+				BB65A102218247D70090988C /* FlocksListingsCityDetailsView.xib */,
+				BBC1466C21878D83004C2B25 /* FlocksListingsFlockDetailsView.xib */,
+				BBC1467021878DC6004C2B25 /* FlocksListingsScheduleDetailsView.xib */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		BB65A0F62181635B0090988C /* Listings */ = {
+			isa = PBXGroup;
+			children = (
+				BB2988CB218699C400B889BB /* FlocksListingsScheduleTableViewCell.swift */,
+				BB65A0FC218185F80090988C /* FlocksListingsCityDetailsView.swift */,
+				BBC1466A21878D4C004C2B25 /* FlocksListingsFlockDetailsView.swift */,
+				BBC1466E21878DAB004C2B25 /* FlocksListingsScheduleDetailsView.swift */,
+			);
+			path = Listings;
+			sourceTree = "<group>";
+		};
+		BB89940F217EC18200473B7A /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				BB50A1A7217D59DF0045502C /* AppManager.swift */,
+				BB50A1AC217D6B3B0045502C /* ViewsCoordinator.swift */,
+				BB50A1AE217D6BC00045502C /* DataManager.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		BB899410217EC41600473B7A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BB899411217EC44100473B7A /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BB50A184217D2E6A0045502C /* BirdsFlock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB50A197217D2E780045502C /* Build configuration list for PBXNativeTarget "BirdsFlock" */;
+			buildPhases = (
+				BB50A181217D2E6A0045502C /* Sources */,
+				BB50A182217D2E6A0045502C /* Frameworks */,
+				BB50A183217D2E6A0045502C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BirdsFlock;
+			productName = BirdsFlock;
+			productReference = BB50A185217D2E6A0045502C /* BirdsFlock.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BB50A17D217D2E6A0045502C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = "Guillermo Irigoyen";
+				TargetAttributes = {
+					BB50A184217D2E6A0045502C = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = BB50A180217D2E6A0045502C /* Build configuration list for PBXProject "BirdsFlock" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BB50A17C217D2E6A0045502C;
+			productRefGroup = BB50A186217D2E6A0045502C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BB50A184217D2E6A0045502C /* BirdsFlock */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BB50A183217D2E6A0045502C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB8994242180124A00473B7A /* FlocksExplorerMapScheduleAnnotationView.xib in Resources */,
+				BB65A103218247D70090988C /* FlocksListingsCityDetailsView.xib in Resources */,
+				BB89941A217EFB9F00473B7A /* FlocksExplorerMapCityAnnotationView.xib in Resources */,
+				BB89941E217FF8E500473B7A /* FlocksExplorerMapFlockAnnotationView.xib in Resources */,
+				BB2CECAA218A6BD1009F0C71 /* FlocksListingsNoScheduleTableViewCell.xib in Resources */,
+				BBC1466D21878D83004C2B25 /* FlocksListingsFlockDetailsView.xib in Resources */,
+				BB65A0F9218184390090988C /* FlocksListingsTableViewController.xib in Resources */,
+				BB65A107218249230090988C /* FlocksListingsDetailViewController.xib in Resources */,
+				BB50A1BA217D713F0045502C /* FlocksExplorerViewController.xib in Resources */,
+				BB50A193217D2E780045502C /* LaunchScreen.storyboard in Resources */,
+				BB50A190217D2E780045502C /* Assets.xcassets in Resources */,
+				BB2988CA2186996D00B889BB /* FlocksListingsScheduleTableViewCell.xib in Resources */,
+				BBC1467121878DC6004C2B25 /* FlocksListingsScheduleDetailsView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BB50A181217D2E6A0045502C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB50A1A4217D46FC0045502C /* Flock.swift in Sources */,
+				BB50A1B3217D6CE60045502C /* Strings.swift in Sources */,
+				BBC1466F21878DAB004C2B25 /* FlocksListingsScheduleDetailsView.swift in Sources */,
+				BB50A1BC217D794A0045502C /* FlocksExplorerMapView.swift in Sources */,
+				BB50A1B8217D6DE10045502C /* FlocksExplorerViewController.swift in Sources */,
+				BB50A189217D2E6B0045502C /* AppDelegate.swift in Sources */,
+				BB50A1AD217D6B3B0045502C /* ViewsCoordinator.swift in Sources */,
+				BB2988CC218699C400B889BB /* FlocksListingsScheduleTableViewCell.swift in Sources */,
+				BB89941C217F011600473B7A /* FlocksExplorerMapCityAnnotationView.swift in Sources */,
+				BB899414217ED9EC00473B7A /* FlocksExplorerMapAnnotation.swift in Sources */,
+				BB8994202180009000473B7A /* FlocksExplorerMapFlockAnnotationView.swift in Sources */,
+				BB50A1A8217D59DF0045502C /* AppManager.swift in Sources */,
+				BB899418217EE06700473B7A /* FlocksExplorerMapAnnotationView.swift in Sources */,
+				BB50A1A6217D473B0045502C /* Schedule.swift in Sources */,
+				BBC1466B21878D4C004C2B25 /* FlocksListingsFlockDetailsView.swift in Sources */,
+				BB8994222180117B00473B7A /* FlocksExplorerMapScheduleAnnotationView.swift in Sources */,
+				BB899412217EC44100473B7A /* Extensions.swift in Sources */,
+				BB65A0F2218156120090988C /* FlocksListingsTableViewController.swift in Sources */,
+				BB50A1A1217D46CE0045502C /* City.swift in Sources */,
+				BB50A1AF217D6BC00045502C /* DataManager.swift in Sources */,
+				BB50A1AB217D64850045502C /* Common.swift in Sources */,
+				BB65A105218248C90090988C /* FlocksListingsDetailViewController.swift in Sources */,
+				BB65A0FD218185F80090988C /* FlocksListingsCityDetailsView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BB50A191217D2E780045502C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BB50A192217D2E780045502C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BB50A195217D2E780045502C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BB50A196217D2E780045502C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BB50A198217D2E780045502C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7EUSRHH2KC;
+				INFOPLIST_FILE = "$(SRCROOT)/BirdsFlock/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DD.Guillermo.BirdsFlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BB50A199217D2E780045502C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7EUSRHH2KC;
+				INFOPLIST_FILE = "$(SRCROOT)/BirdsFlock/Support Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.DD.Guillermo.BirdsFlock;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BB50A180217D2E6A0045502C /* Build configuration list for PBXProject "BirdsFlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB50A195217D2E780045502C /* Debug */,
+				BB50A196217D2E780045502C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BB50A197217D2E780045502C /* Build configuration list for PBXNativeTarget "BirdsFlock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BB50A198217D2E780045502C /* Debug */,
+				BB50A199217D2E780045502C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BB50A17D217D2E6A0045502C /* Project object */;
+}

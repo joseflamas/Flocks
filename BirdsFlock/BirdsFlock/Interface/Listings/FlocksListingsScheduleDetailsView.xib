@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FlocksListingsScheduleDetailsView" customModule="BirdsFlock" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ScheduleButton" translatesAutoresizingMaskIntoConstraints="NO" id="Uev-MV-GuQ">
+                    <rect key="frame" x="16" y="62" width="343" height="140"/>
+                    <color key="backgroundColor" red="1" green="0.96508917662093452" blue="0.22932697601406504" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="140" id="vmc-Pk-p1s"/>
+                        <constraint firstAttribute="width" constant="343" id="xoZ-UE-yoS"/>
+                    </constraints>
+                </imageView>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fLW-4f-Gee">
+                    <rect key="frame" x="16" y="210" width="343" height="420"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Flock Id:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOp-vE-puN">
+                            <rect key="frame" x="8" y="16" width="65" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FLOCK ID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MoA-6S-f6O">
+                            <rect key="frame" x="20" y="45" width="117" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="117" id="CEw-ef-056"/>
+                                <constraint firstAttribute="height" constant="21" id="VeP-Mb-xUc"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fgr-xk-prJ" userLabel="Flock Picker">
+                            <rect key="frame" x="145" y="8" width="190" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="5V6-rL-Vur"/>
+                                <constraint firstAttribute="height" constant="58" id="dAD-N0-pZ6"/>
+                            </constraints>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="City:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgl-KW-PkP">
+                            <rect key="frame" x="8" y="82" width="35" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESTINY" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vJV-Hs-jmH">
+                            <rect key="frame" x="20" y="111" width="117" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="WpR-cl-iU4"/>
+                                <constraint firstAttribute="width" constant="117" id="Xq5-RN-2AD"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BJG-G4-FPJ" userLabel="City Picker">
+                            <rect key="frame" x="145" y="74" width="190" height="58"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="190" id="gbY-1w-gb0"/>
+                                <constraint firstAttribute="height" constant="58" id="gyU-3O-UIh"/>
+                            </constraints>
+                        </pickerView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHq-22-UeV">
+                            <rect key="frame" x="8" y="142" width="83" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="83" id="EGL-Hh-0Eb"/>
+                                <constraint firstAttribute="height" constant="21" id="xGV-GV-Vgs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gXw-cV-igy">
+                            <rect key="frame" x="106" y="142" width="229" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="229" id="U7e-2G-b1m"/>
+                                <constraint firstAttribute="height" constant="21" id="d6a-bl-QMe"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="CpR-pS-bjE">
+                            <rect key="frame" x="8" y="164" width="327" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="327" id="EcC-xX-bIh"/>
+                                <constraint firstAttribute="height" constant="45" id="Vzj-Il-FpC"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="562541777.79622698">
+                                <!--2018-10-29 21:36:17 +0000-->
+                            </date>
+                        </datePicker>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DWy-Ft-2DB">
+                            <rect key="frame" x="8" y="218" width="83" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="21" id="OvM-rA-Dwd"/>
+                                <constraint firstAttribute="width" constant="83" id="gVT-Pk-yQ9"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Tza-DU-AYF">
+                            <rect key="frame" x="8" y="245" width="327" height="45"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="45" id="1T6-8w-3oZ"/>
+                                <constraint firstAttribute="width" constant="327" id="EZq-OK-ZON"/>
+                            </constraints>
+                            <date key="date" timeIntervalSinceReferenceDate="562541777.79622698">
+                                <!--2018-10-29 21:36:17 +0000-->
+                            </date>
+                        </datePicker>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vm6-ZN-HDn">
+                            <rect key="frame" x="8" y="303" width="327" height="30"/>
+                            <color key="backgroundColor" red="1" green="0.49327188729999999" blue="0.47399842739999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <state key="normal" title="Cancel"/>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2mb-R5-UDa">
+                            <rect key="frame" x="8" y="339" width="327" height="30"/>
+                            <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <state key="normal" title="Save"/>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End Date" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tUS-T6-usr">
+                            <rect key="frame" x="106" y="218" width="229" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="229" id="IGl-yv-6d8"/>
+                                <constraint firstAttribute="height" constant="21" id="ouM-we-A1a"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="CpR-pS-bjE" firstAttribute="leading" secondItem="DWy-Ft-2DB" secondAttribute="leading" id="0eV-zs-aFv"/>
+                        <constraint firstItem="Tza-DU-AYF" firstAttribute="leading" secondItem="Vm6-ZN-HDn" secondAttribute="leading" id="2qR-rn-h3r"/>
+                        <constraint firstItem="2mb-R5-UDa" firstAttribute="top" secondItem="Vm6-ZN-HDn" secondAttribute="bottom" constant="6" id="45G-I5-j6d"/>
+                        <constraint firstItem="Vm6-ZN-HDn" firstAttribute="top" secondItem="Tza-DU-AYF" secondAttribute="bottom" constant="13" id="80O-rS-eHF"/>
+                        <constraint firstItem="gXw-cV-igy" firstAttribute="trailing" secondItem="CpR-pS-bjE" secondAttribute="trailing" id="9nL-gY-Tkw"/>
+                        <constraint firstItem="bgl-KW-PkP" firstAttribute="leading" secondItem="PHq-22-UeV" secondAttribute="leading" id="ASG-Mx-e7b"/>
+                        <constraint firstItem="Fgr-xk-prJ" firstAttribute="top" secondItem="dfw-a4-nhS" secondAttribute="top" constant="8" id="AWA-oy-Tfj"/>
+                        <constraint firstItem="DWy-Ft-2DB" firstAttribute="top" secondItem="CpR-pS-bjE" secondAttribute="bottom" constant="9" id="DDH-U3-OYw"/>
+                        <constraint firstItem="eOp-vE-puN" firstAttribute="leading" secondItem="bgl-KW-PkP" secondAttribute="leading" id="Gai-N8-I6B"/>
+                        <constraint firstItem="BJG-G4-FPJ" firstAttribute="top" secondItem="Fgr-xk-prJ" secondAttribute="bottom" constant="8" symbolic="YES" id="Ju4-xx-4Gp"/>
+                        <constraint firstItem="gXw-cV-igy" firstAttribute="leading" secondItem="tUS-T6-usr" secondAttribute="leading" id="Kcp-a2-bdb"/>
+                        <constraint firstItem="DWy-Ft-2DB" firstAttribute="leading" secondItem="Tza-DU-AYF" secondAttribute="leading" id="Oki-Ma-ynV"/>
+                        <constraint firstItem="eOp-vE-puN" firstAttribute="leading" secondItem="fLW-4f-Gee" secondAttribute="leadingMargin" id="P1D-a5-mac"/>
+                        <constraint firstItem="PHq-22-UeV" firstAttribute="leading" secondItem="CpR-pS-bjE" secondAttribute="leading" id="PNa-JF-h7J"/>
+                        <constraint firstItem="MoA-6S-f6O" firstAttribute="top" secondItem="eOp-vE-puN" secondAttribute="bottom" constant="8" symbolic="YES" id="SKs-7c-DWv"/>
+                        <constraint firstItem="BJG-G4-FPJ" firstAttribute="trailing" secondItem="gXw-cV-igy" secondAttribute="trailing" id="SL0-w3-di8"/>
+                        <constraint firstItem="Fgr-xk-prJ" firstAttribute="top" secondItem="fLW-4f-Gee" secondAttribute="topMargin" id="WU0-a1-dBo"/>
+                        <constraint firstItem="vJV-Hs-jmH" firstAttribute="bottom" secondItem="BJG-G4-FPJ" secondAttribute="bottom" id="Zip-L4-nLb"/>
+                        <constraint firstItem="DWy-Ft-2DB" firstAttribute="baseline" secondItem="tUS-T6-usr" secondAttribute="baseline" id="bNe-Lv-OAV"/>
+                        <constraint firstItem="PHq-22-UeV" firstAttribute="top" secondItem="vJV-Hs-jmH" secondAttribute="bottom" constant="10" id="cPj-1h-mbN"/>
+                        <constraint firstItem="MoA-6S-f6O" firstAttribute="leading" secondItem="vJV-Hs-jmH" secondAttribute="leading" id="gB8-S3-Lg3"/>
+                        <constraint firstItem="Tza-DU-AYF" firstAttribute="top" secondItem="DWy-Ft-2DB" secondAttribute="bottom" constant="6" id="jaU-KC-iKC"/>
+                        <constraint firstItem="Fgr-xk-prJ" firstAttribute="leading" secondItem="MoA-6S-f6O" secondAttribute="trailing" constant="8" symbolic="YES" id="lkW-dc-2Fa"/>
+                        <constraint firstItem="Fgr-xk-prJ" firstAttribute="leading" secondItem="BJG-G4-FPJ" secondAttribute="leading" id="mG6-Jn-aod"/>
+                        <constraint firstItem="CpR-pS-bjE" firstAttribute="top" secondItem="PHq-22-UeV" secondAttribute="bottom" constant="1" id="n8F-m1-CCu"/>
+                        <constraint firstAttribute="bottom" secondItem="2mb-R5-UDa" secondAttribute="bottom" constant="51" id="nxa-yB-Pg9"/>
+                        <constraint firstItem="Fgr-xk-prJ" firstAttribute="trailing" secondItem="fLW-4f-Gee" secondAttribute="trailingMargin" id="o9e-qW-7z1"/>
+                        <constraint firstItem="PHq-22-UeV" firstAttribute="baseline" secondItem="gXw-cV-igy" secondAttribute="baseline" id="td0-qd-7RY"/>
+                        <constraint firstItem="eOp-vE-puN" firstAttribute="leading" secondItem="dfw-a4-nhS" secondAttribute="leading" constant="8" id="ttp-uE-Kcv"/>
+                        <constraint firstItem="Tza-DU-AYF" firstAttribute="trailing" secondItem="Vm6-ZN-HDn" secondAttribute="trailing" id="uQQ-eA-DOe"/>
+                        <constraint firstItem="vJV-Hs-jmH" firstAttribute="top" secondItem="bgl-KW-PkP" secondAttribute="bottom" constant="8" symbolic="YES" id="uWk-0z-cTT"/>
+                        <constraint firstItem="Vm6-ZN-HDn" firstAttribute="trailing" secondItem="2mb-R5-UDa" secondAttribute="trailing" id="wWY-W7-LWG"/>
+                        <constraint firstItem="Vm6-ZN-HDn" firstAttribute="leading" secondItem="2mb-R5-UDa" secondAttribute="leading" id="xY4-e5-9ZD"/>
+                        <constraint firstItem="MoA-6S-f6O" firstAttribute="bottom" secondItem="Fgr-xk-prJ" secondAttribute="bottom" id="ycT-jR-lmP"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="dfw-a4-nhS"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fLW-4f-Gee" secondAttribute="bottom" constant="37" id="4TV-RA-Ris"/>
+                <constraint firstItem="fLW-4f-Gee" firstAttribute="trailing" secondItem="Uev-MV-GuQ" secondAttribute="trailing" id="7M8-O4-fxj"/>
+                <constraint firstItem="fLW-4f-Gee" firstAttribute="top" secondItem="Uev-MV-GuQ" secondAttribute="bottom" constant="8" symbolic="YES" id="9CI-WP-Kfi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Uev-MV-GuQ" secondAttribute="trailing" constant="16" id="R2F-US-CNo"/>
+                <constraint firstItem="Uev-MV-GuQ" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="42" id="SE7-o5-W3P"/>
+                <constraint firstItem="Uev-MV-GuQ" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="vbJ-8S-ady"/>
+                <constraint firstItem="fLW-4f-Gee" firstAttribute="leading" secondItem="Uev-MV-GuQ" secondAttribute="leading" id="yMd-iu-HxL"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="scheduleCancelButton" destination="Vm6-ZN-HDn" id="WR5-q3-VvG"/>
+                <outlet property="scheduleCityNameLabel" destination="vJV-Hs-jmH" id="2On-ir-xIp"/>
+                <outlet property="scheduleCityPicker" destination="BJG-G4-FPJ" id="OuY-K8-jrV"/>
+                <outlet property="scheduleEndDateLabel" destination="tUS-T6-usr" id="9vS-VR-OVQ"/>
+                <outlet property="scheduleEndDatePicker" destination="Tza-DU-AYF" id="Ldd-Uc-Nw9"/>
+                <outlet property="scheduleFlockIdLabel" destination="MoA-6S-f6O" id="x6k-dw-s5O"/>
+                <outlet property="scheduleFlockPicker" destination="Fgr-xk-prJ" id="JqL-Nh-82L"/>
+                <outlet property="scheduleSaveButton" destination="2mb-R5-UDa" id="dwR-yN-uXe"/>
+                <outlet property="scheduleScrollView" destination="fLW-4f-Gee" id="zQG-WZ-03O"/>
+                <outlet property="scheduleStartDateLabel" destination="gXw-cV-igy" id="chs-Rg-3dr"/>
+                <outlet property="scheduleStartDatePicker" destination="CpR-pS-bjE" id="Mq0-n3-deE"/>
+            </connections>
+            <point key="canvasLocation" x="-137" y="5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ScheduleButton" width="48" height="48"/>
+    </resources>
+</document>
