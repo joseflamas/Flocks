@@ -1,3 +1,12 @@
+# Parvada 
+Aplicacion enfocada al movimiento de las cosas 
+Demo :: 13 Nov 2018 ::
+Anima Beta 1 :)
+Notas Principales:
+  + Todo en español.
+  + El codigo fuente será escrito en español a partir de ahora. 
+  
+
 # Flocks
 iOS app to coordinate and movement of things 
 
